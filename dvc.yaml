@@ -1,9 +1,11 @@
-# dvc.yaml
 stages:
   download:
     cmd: python src/download.py
+    deps:
+      - src/download.py
     outs:
       - data/iris.csv
+
   train:
     cmd: python src/train.py
     deps:

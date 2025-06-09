@@ -1,0 +1,13 @@
+# dvc.yaml
+stages:
+  download:
+    cmd: python src/download.py
+    outs:
+      - data/iris.csv
+  train:
+    cmd: python src/train.py
+    deps:
+      - data/iris.csv
+      - src/train.py
+    outs:
+      - models/model.pkl

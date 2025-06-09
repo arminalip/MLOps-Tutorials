@@ -11,7 +11,17 @@ This project demonstrates a production-grade MLOps workflow using:
 ---
 
 ## 📁 Project Structure
-
+├── dvc.yaml # DVC pipeline definition
+├── dvc.lock # DVC pipeline lock file
+├── requirements.txt # Python dependencies
+├── src/
+│ ├── download.py # Downloads iris dataset
+│ └── train.py # Trains model and logs metrics/artifacts
+├── data/
+│ └── iris.csv.dvc # DVC-tracked raw dataset (removed)
+├── models/
+│ └── model.pkl.dvc # DVC-tracked trained model (removed)
+└── .venv/ # Python virtual environment (ignored)
 ---
 
 ## ⚙️ Setup Instructions

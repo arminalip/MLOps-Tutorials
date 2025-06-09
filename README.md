@@ -19,5 +19,5 @@ This project demonstrates a production-grade MLOps workflow using:
 ### 1. Clone the repo
 
 ```bash
-git clone 
-cd 
+git clone https://github.com/arminalip/MLOps-Tutorials.git
+cd MLOps-Tutorials
